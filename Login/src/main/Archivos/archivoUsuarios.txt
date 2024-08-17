@@ -1,0 +1,1 @@
+Usuario{nombre=rodrigo, apellidoPaterno=lopez, apellidoMaterno=lopez, correo=rodrigo@gmail.com, contra=1234, edad=0}
