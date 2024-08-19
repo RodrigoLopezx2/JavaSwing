@@ -1,4 +1,0 @@
-nombre=rodrigo, apellidoPaterno=lopez, apellidoMaterno=lopez, correo=rodrigo@gmail.com, contra=1234, edad=23
-nombre=juan, apellidoPaterno=Beltran, apellidoMaterno=lopez, correo=juan@gmail.com, contra=1234, edad=23
-nombre=kevin, apellidoPaterno=Rangel, apellidoMaterno=lopez, correo=kevin@gmail.com, contra=1234, edad=23
-
