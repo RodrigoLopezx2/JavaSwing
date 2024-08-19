@@ -54,7 +54,27 @@ public class LogInUI extends javax.swing.JFrame {
         textFieldContrasenConfirm = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         RegresarBoton = new javax.swing.JButton();
+        textFieldEdad = new javax.swing.JTextField();
+        jLabel10 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
+        actualizarUsuarioBoton = new javax.swing.JButton();
+        eliminarUsuarioBoton = new javax.swing.JButton();
+        jLabel11 = new javax.swing.JLabel();
+        textNombreC = new javax.swing.JTextField();
+        textApellidoMC = new javax.swing.JTextField();
+        textApellidoPC = new javax.swing.JTextField();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        textEdadC = new javax.swing.JTextField();
+        jLabel14 = new javax.swing.JLabel();
+        textCorreoC = new javax.swing.JTextField();
+        jLabel15 = new javax.swing.JLabel();
+        textContraC = new javax.swing.JTextField();
+        jLabel16 = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
+        jPanel5 = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
+        regresarBoton2 = new javax.swing.JButton();
 
         jLabel1.setText("jLabel1");
 
@@ -126,6 +146,8 @@ public class LogInUI extends javax.swing.JFrame {
             }
         });
 
+        jLabel10.setText("Edad");
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
@@ -133,31 +155,35 @@ public class LogInUI extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(122, 122, 122)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(textFielNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(textFieldCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel6))
-                        .addGap(30, 30, 30)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(textFieldApellidoPaterno, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel4)
-                            .addComponent(textFieldContrasena, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel7))
-                        .addGap(41, 41, 41)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel8)
-                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jLabel5)
-                                .addComponent(textFieldApellidoMaterno)
-                                .addComponent(textFieldContrasenConfirm, javax.swing.GroupLayout.DEFAULT_SIZE, 225, Short.MAX_VALUE))))
+                        .addGap(46, 46, 46)
+                        .addComponent(RegresarBoton))
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(408, 408, 408)
+                        .addGap(397, 397, 397)
                         .addComponent(CrearUsuarioBoton, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(46, 46, 46)
-                        .addComponent(RegresarBoton)))
+                        .addGap(122, 122, 122)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel10)
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(textFieldEdad)
+                                    .addComponent(textFielNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 225, Short.MAX_VALUE)
+                                    .addComponent(textFieldCorreo, javax.swing.GroupLayout.DEFAULT_SIZE, 225, Short.MAX_VALUE)
+                                    .addComponent(jLabel3)
+                                    .addComponent(jLabel6))
+                                .addGap(30, 30, 30)
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(textFieldApellidoPaterno, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel4)
+                                    .addComponent(textFieldContrasena, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel7))
+                                .addGap(41, 41, 41)
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel8)
+                                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(jLabel5)
+                                        .addComponent(textFieldApellidoMaterno)
+                                        .addComponent(textFieldContrasenConfirm, javax.swing.GroupLayout.DEFAULT_SIZE, 225, Short.MAX_VALUE)))))))
                 .addContainerGap(112, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
@@ -185,27 +211,176 @@ public class LogInUI extends javax.swing.JFrame {
                     .addComponent(textFieldCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(textFieldContrasena, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(textFieldContrasenConfirm, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(50, 50, 50)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel10)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(textFieldEdad, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(27, 27, 27)
                 .addComponent(CrearUsuarioBoton, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(258, 258, 258))
+                .addGap(200, 200, 200))
         );
 
         jPanel1.add(jPanel4, "card4");
 
         jPanel3.setBackground(new java.awt.Color(0, 153, 255));
 
+        actualizarUsuarioBoton.setText("Actualizar Datos");
+        actualizarUsuarioBoton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                actualizarUsuarioBotonActionPerformed(evt);
+            }
+        });
+
+        eliminarUsuarioBoton.setText("Eliminar cuenta");
+        eliminarUsuarioBoton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eliminarUsuarioBotonActionPerformed(evt);
+            }
+        });
+
+        jLabel11.setText("Nombre");
+
+        textNombreC.setText("jTextField1");
+
+        textApellidoMC.setText("jTextField2");
+
+        textApellidoPC.setText("jTextField3");
+
+        jLabel12.setText("Apellido Paterno");
+
+        jLabel13.setText("Apellido Materno");
+
+        textEdadC.setText("jTextField4");
+
+        jLabel14.setText("Edad");
+
+        textCorreoC.setText("jTextField5");
+
+        jLabel15.setText("Correo");
+
+        textContraC.setText("jTextField6");
+
+        jLabel16.setText("Contrasena");
+
+        jButton3.setText("Cerrar Sesion");
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 980, Short.MAX_VALUE)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(128, 128, 128)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(jLabel14)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addComponent(jLabel12)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(textEdadC)
+                                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(jLabel11)
+                                            .addComponent(textApellidoPC, javax.swing.GroupLayout.DEFAULT_SIZE, 201, Short.MAX_VALUE)
+                                            .addComponent(textApellidoMC)
+                                            .addComponent(textNombreC))
+                                        .addComponent(jLabel13)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 340, Short.MAX_VALUE)
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(actualizarUsuarioBoton, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(eliminarUsuarioBoton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addGap(192, 192, 192))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel16)
+                            .addComponent(textContraC, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel15)
+                            .addComponent(textCorreoC, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 650, Short.MAX_VALUE)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addComponent(jLabel11)
+                .addGap(18, 18, 18)
+                .addComponent(textNombreC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel12)
+                .addGap(12, 12, 12)
+                .addComponent(textApellidoMC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel13)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(textApellidoPC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(17, 17, 17)
+                        .addComponent(actualizarUsuarioBoton)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel14)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(eliminarUsuarioBoton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(textEdadC))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel15)
+                .addGap(10, 10, 10)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(textCorreoC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton3))
+                .addGap(8, 8, 8)
+                .addComponent(jLabel16)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(textContraC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(244, Short.MAX_VALUE))
         );
 
         jPanel1.add(jPanel3, "card3");
+
+        jPanel5.setBackground(new java.awt.Color(255, 102, 102));
+
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel9.setText("Error usuario o contraseña incorrectos");
+
+        regresarBoton2.setText("RegresarAlMenu");
+        regresarBoton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                regresarBoton2ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGap(317, 317, 317)
+                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 308, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGap(360, 360, 360)
+                        .addComponent(regresarBoton2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(355, Short.MAX_VALUE))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(227, 227, 227)
+                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(regresarBoton2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(306, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(jPanel5, "card5");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -222,13 +397,29 @@ public class LogInUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void InicioSesionBotonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InicioSesionBotonActionPerformed
-        if (usuarioDAO.inicarSeion(entradaCorreo.getText(), entradaContrasena.getText())) {
+        if (usuarioDAO.inicarSesion(entradaCorreo.getText(), entradaContrasena.getText())) {
             jPanel1.removeAll();
             jPanel1.add(jPanel3);
             jPanel1.repaint();
             jPanel1.revalidate();
+            
+            Usuario usuario = usuarioDAO.buscarUsuario(entradaCorreo.getText());
+            
+            if(usuario != null){
+                textNombreC.setText(usuario.getNombre());
+                textApellidoPC.setText(usuario.getApellidoPaterno());
+                textApellidoMC.setText(usuario.getApellidoMaterno());
+                textEdadC.setText(String.valueOf(usuario.getEdad()));
+                textCorreoC.setText(usuario.getCorreo());
+                textContraC.setText(usuario.getContra());
+                
+            }
+            
         }else{
-            System.out.println("Contrasena o Correo Incorrecto");
+            jPanel1.removeAll();
+            jPanel1.add(jPanel5);
+            jPanel1.repaint();
+            jPanel1.revalidate();
         }
 
 
@@ -242,6 +433,7 @@ public class LogInUI extends javax.swing.JFrame {
         usuario.setApellidoPaterno(textFieldApellidoPaterno.getText());
         usuario.setApellidoMaterno(textFieldApellidoMaterno.getText());
         usuario.setCorreo(textFieldCorreo.getText());
+        usuario.setEdad(Integer.parseInt(textFieldEdad.getText()));
         if (textFieldContrasena.getText().equals(textFieldContrasenConfirm.getText())) {
             usuario.setContra(textFieldContrasena.getText());
         }
@@ -256,10 +448,7 @@ public class LogInUI extends javax.swing.JFrame {
 
     private void RegresarBotonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegresarBotonActionPerformed
         // TODO add your handling code here:
-        jPanel1.removeAll();
-        jPanel1.add(jPanel2);
-        jPanel1.repaint();
-        jPanel1.revalidate();
+        regresarMenu();
     }//GEN-LAST:event_RegresarBotonActionPerformed
 
     private void CrearCuentaBotonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CrearCuentaBotonActionPerformed
@@ -274,6 +463,38 @@ public class LogInUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_textFielNombreActionPerformed
 
+    private void regresarBoton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regresarBoton2ActionPerformed
+        // TODO add your handling code here:
+        regresarMenu();
+    }//GEN-LAST:event_regresarBoton2ActionPerformed
+
+    private void actualizarUsuarioBotonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_actualizarUsuarioBotonActionPerformed
+        // TODO add your handling code here:
+        Usuario usuario = new Usuario();
+        usuario.setNombre(textNombreC.getText());
+        usuario.setApellidoPaterno(textApellidoPC.getText());
+        usuario.setApellidoMaterno(textApellidoMC.getText());
+        usuario.setCorreo(textCorreoC.getText());
+        usuario.setEdad(Integer.parseInt(textEdadC.getText()));
+        if (textContraC.getText().equals(textContraC.getText())) {
+            usuario.setContra(textContraC.getText());
+        }
+        usuarioDAO.actualizarUsuario(usuario);
+        
+    }//GEN-LAST:event_actualizarUsuarioBotonActionPerformed
+
+    private void eliminarUsuarioBotonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminarUsuarioBotonActionPerformed
+        // TODO add your handling code here:
+        usuarioDAO.eliminarUsuario(textCorreoC.getText());
+        regresarMenu();
+    }//GEN-LAST:event_eliminarUsuarioBotonActionPerformed
+
+    public  void regresarMenu(){
+        jPanel1.removeAll();
+        jPanel1.add(jPanel2);
+        jPanel1.repaint();
+        jPanel1.revalidate();
+    }
     /**
      * @param args the command line arguments
      */
@@ -302,10 +523,8 @@ public class LogInUI extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new LogInUI().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new LogInUI().setVisible(true);
         });
     }
 
@@ -314,9 +533,19 @@ public class LogInUI extends javax.swing.JFrame {
     private javax.swing.JButton CrearUsuarioBoton;
     private javax.swing.JButton InicioSesionBoton;
     private javax.swing.JButton RegresarBoton;
+    private javax.swing.JButton actualizarUsuarioBoton;
+    private javax.swing.JButton eliminarUsuarioBoton;
     private javax.swing.JTextField entradaContrasena;
     private javax.swing.JTextField entradaCorreo;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -324,15 +553,25 @@ public class LogInUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JButton regresarBoton2;
+    private javax.swing.JTextField textApellidoMC;
+    private javax.swing.JTextField textApellidoPC;
+    private javax.swing.JTextField textContraC;
+    private javax.swing.JTextField textCorreoC;
+    private javax.swing.JTextField textEdadC;
     private javax.swing.JTextField textFielNombre;
     private javax.swing.JTextField textFieldApellidoMaterno;
     private javax.swing.JTextField textFieldApellidoPaterno;
     private javax.swing.JTextField textFieldContrasenConfirm;
     private javax.swing.JTextField textFieldContrasena;
     private javax.swing.JTextField textFieldCorreo;
+    private javax.swing.JTextField textFieldEdad;
+    private javax.swing.JTextField textNombreC;
     // End of variables declaration//GEN-END:variables
 }
